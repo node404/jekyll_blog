@@ -1,16 +1,11 @@
 ---
 layout: post
-title: "测试yi'xia测试车我是测试"
+title: "a day with markdown test on jekyll"
 description: ""
-category: 
+category:
 tags: []
 ---
 {% include JB/setup %}
-
-
-
-
-Enter file contents here
 
 # this is test
 1. a
