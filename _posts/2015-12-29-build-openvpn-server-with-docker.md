@@ -1,9 +1,9 @@
 ---
 layout: post
-title: "a day trying to build a ubuntu server"
+title: "尝试搭建openvpn server（with docker）"
 description: ""
 category:
-tags: []
+tags: [openvpn, docker]
 ---
 {% include JB/setup %}
 

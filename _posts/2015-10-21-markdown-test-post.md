@@ -3,7 +3,7 @@ layout: post
 title: "a day with markdown test on jekyll"
 description: ""
 category:
-tags: []
+tags: [markdown]
 ---
 {% include JB/setup %}
 
