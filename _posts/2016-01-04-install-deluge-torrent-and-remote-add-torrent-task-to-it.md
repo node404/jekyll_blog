@@ -14,32 +14,40 @@ p2p的torrent一直是我的最爱。deluge是一个跨平台的操作系统，�
 # 服务器端：
 
 安装:
-$ sudo apt-get install deluged deluge-web
+
+  $ sudo apt-get install deluged deluge-web
 
 新建一个deluge用户和用户组:
-$ sudo adduser --system  --gecos "Deluge Service" --disabled-password --group --home /var/lib/deluge deluge
+
+  $ sudo adduser --system  --gecos "Deluge Service" --disabled-password --group --home /var/lib/deluge deluge
 
 把用户添加到deluge用户组```adduser <username> deluge```，便于用户操作torrent和下载到的文件，在我的kodi的xubuntu，当然就是kodi用户了：
-$ sudo adduser kodi deluge
+
+  $ sudo adduser kodi deluge
 
 需要临时登录deluge用户配置远程管理, 因此如果系统不允许没有密码的用户登录，则需要给deluge设置一个密码
-$ sudo passwd deluge：
+
+  $ sudo passwd deluge：
 
 然后再登录deluge用户：
-$ su deluge
 
-$ deluge-console "config -s allow_remote True"
-$ deluge-console "config allow_remote"
+  $ su deluge
+
+  $ deluge-console "config -s allow_remote True"
+  $ deluge-console "config allow_remote"
 
 修改远程控制的密码，格式是```<username>:<password>:10```：
-$ cp ~/.config/deluge/auth ~/.conf/deluge/auth.bak
-$ vim ~/.config/deluge/auth
+
+  $ cp ~/.config/deluge/auth ~/.conf/deluge/auth.bak
+  $ vim ~/.config/deluge/auth
 
 退出deluge：
-exit
+
+  $ exit
 
 执行deluge的守护进程：
-deluged
+
+  $ deluged
 
 (可选)让deluge作为服务运行，暂略。
 
@@ -49,19 +57,20 @@ deluged
 
 安装deluge：
 
-$ sudo pacman -S deluge
+  $ sudo pacman -S deluge
 
 OR
 
-$ sudo apt-get install deluge
+  $ sudo apt-get install deluge
 
 deluge安装好了，在终端执行deluge, 或者直接打开应用程序，在菜单中选择：
 
-Preferences -> Interface and disable Classic Mode
+  Preferences -> Interface : 把 Classic Mode 的勾勾掉
 
 然后会自动重启deluge，重新启动后，系统会让你选择一个服务器，默认有一个127.0.0.1的本地deluge服务，显然这不是我们想要的：
 点击Add，输入服务器的ip地址:
-Hostname is your server's IP.
+
+Hostname就是服务器的IP地址.
 Port端口一般都是默认的58846.
 Username用户名和Password密码就是之前在auth文件里的配置
 

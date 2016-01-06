@@ -18,14 +18,14 @@ eclipse在linux下，下载以后不需要安装，直接在目录下执行.\ecl
 
 新建一个eclipse.desktop的文件，然后输入以下内容：
 
-[Desktop Entry]
-Encoding=UTF-8
-Name=Eclipse J2ee
-Comment=Official desktop version of Telegram messaging app
-Exec=/opt/eclipse-jee/eclipse
-Icon=/opt/eclipse-jee/icon.xpm
-Type=Application
-Categories=Development;
+  [Desktop Entry]
+  Encoding=UTF-8
+  Name=Eclipse J2ee
+  Comment=Official desktop version of Telegram messaging app
+  Exec=/opt/eclipse-jee/eclipse
+  Icon=/opt/eclipse-jee/icon.xpm
+  Type=Application
+  Categories=Development;
 
 Categories就是类目，可以输入多个。编辑保存，不需要再做任何操作，eclipse就可以搜索到了。
 
