@@ -13,7 +13,7 @@ tags: []
 
 注意里面的R参数，就是要用到的参数：
 
-	 -R [bind_address:]port:host:hostport
+	-R [bind_address:]port:host:hostport
              Specifies that the given port on the remote (server) host is to be forwarded to the given host and port on the local side.  This works by allocating a socket to listen to port
 
 意思就是把一个远程主机的端口用于本地端口的端口转发。于是对应于假设远程主机IP:192.168.172.11, 本地ssh端口是默认的22，我们可以这样做：

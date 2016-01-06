@@ -2,7 +2,7 @@
 layout: post
 title: "调整linux主分区的大小"
 description: ""
-category: 
+category:
 tags: []
 ---
 {% include JB/setup %}
@@ -17,9 +17,9 @@ tags: []
 
 在linux下把镜像刻录到usb是非常方便的。接上U盘以后，可以通过```lsblk``` 查看一下u盘的设备路径,比如我的是```/dev/sdc```,基本上可以通过大小就能判断出来了。
 
-sdc                   8:32   1   7.2G  0 disk 
-├─sdc1                8:33   1   1.1G  0 part 
-└─sdc2                8:34   1   2.2M  0 part 
+    sdc                   8:32   1   7.2G  0 disk
+    ├─sdc1                8:33   1   1.1G  0 part
+    └─sdc2                8:34   1   2.2M  0 part
 
 然后找到镜像的位置，输入以下命令，耐心等待几分钟就可以了。我因为之前刚刚用过kubuntu，所以也懒得在刻录别的。其实要实现分区大小调整，基本上只要能跑起来的发行版都可以。不过ubuntu下有个预装的工具叫```gparted```，可以免掉一些麻烦。
 
@@ -29,17 +29,17 @@ sudo dd bs=4M if=/data/OS_ISOs/Linux/xubuntu-15.10-beta2-desktop-amd64.iso of=/d
 
 接下来在arch上，先把swap分区禁用掉，还是通过```lsblk```, 记录/root分区和swap分区是哪个。
 
-─sda2                8:2    0  66.4G  0 part /
-─sda4                8:4    0     8G  0 part [SWAP]
+    ─sda2                8:2    0  66.4G  0 part /
+    ─sda4                8:4    0     8G  0 part [SWAP]
 
 我的是```/dev/sda4```, 禁用swap:
 
-sudo swapoff /dev/sda4
+    sudo swapoff /dev/sda4
 
 然后编辑分区表。
 
-sudo cp /etc/fstab /etc/fstab.bak # 备份下，万一弄错了还可以恢复系统
-sudo vim /etc/fstab
+    sudo cp /etc/fstab /etc/fstab.bak # 备份下，万一弄错了还可以恢复系统
+    sudo vim /etc/fstab
 
 在swap的那个设备前面加一个"#"，注释掉swap的分区。
 
@@ -53,15 +53,11 @@ sudo vim /etc/fstab
 
 但是swap分区还并没有启用。执行```bklid```, 确定swap分区的uuid，然后重新编辑分区表:
 
-sudo vim /etc/fstab
+    sudo vim /etc/fstab
 
 把之前swap分区的uuid改成新的uuid，保存。然后根据swap的位置执行后面两条命令，启用swap，新的设备名称可能还是```/dev/sda4```也可能不是。这时候可以输入```sudo bklid ```来确定以下：
 
-sudo mkswap /dev/sda4
-sudo swapon /dev/sda4
+    sudo mkswap /dev/sda4
+    sudo swapon /dev/sda4
 
 重启，reboot。重启以后
-
-
-
-
