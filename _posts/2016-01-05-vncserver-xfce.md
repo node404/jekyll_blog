@@ -11,13 +11,15 @@ tags: []
 
 1）在终端安装tigervnc：
 
-$ sudo apt-get install tigervnc
+    $ sudo apt-get install tigervnc
 
 2）启动tigervnc
-$ vncserver
+
+    $ vncserver
 
 提示你输入vnc的密码：
-enter your password (length 8)
+
+    enter your password (length 8)
 
 然后终端会显示New 'X' desktop is kodi-kodibuntu:1
 
@@ -28,14 +30,16 @@ enter your password (length 8)
 在客户端:
 
 1) 安装tigervnc:
-sudo pacman -S tigervnc   (archlinux)
+
+    $ sudo pacman -S tigervnc   (archlinux)
 
 或者
 
-$ sudo apt-get install tigervnc (ubuntu/debian)
+    $ sudo apt-get install tigervnc (ubuntu/debian)
 
 2) 直接运行vncviewer或者在终端输入:
-$ vncviewer
+
+    $ vncviewer
 
 端口默认是5900+n，根据New 'X' desktop is kodi-kodibuntu:1, 因为服务器上的提示是:1, 所以端口就是5901
 
