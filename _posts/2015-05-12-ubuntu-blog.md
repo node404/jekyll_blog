@@ -3,7 +3,7 @@ layout: post
 title: "a day about ubuntu"
 description: ""
 category:
-tags: [test, linux]
+tags: []
 ---
 {% include JB/setup %}
 

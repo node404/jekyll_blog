@@ -3,7 +3,7 @@ layout: post
 title: "tmux copy and paste"
 description: ""
 category:
-tags: []
+tags: [linux, tmux]
 ---
 {% include JB/setup %}
 

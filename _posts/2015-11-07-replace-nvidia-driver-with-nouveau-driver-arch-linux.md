@@ -3,7 +3,7 @@ layout: post
 title: "replace nvidia driver with nouveau driver arch linux"
 description: ""
 category:
-tags: [linux, driver, archlinux,]
+tags: [driver, archlinux,]
 ---
 {% include JB/setup %}
 

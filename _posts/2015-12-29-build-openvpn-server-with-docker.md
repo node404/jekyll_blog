@@ -3,7 +3,7 @@ layout: post
 title: "尝试搭建openvpn server（with docker）"
 description: ""
 category:
-tags: [openvpn, docker]
+tags: [openvpn, docker, linux]
 ---
 {% include JB/setup %}
 

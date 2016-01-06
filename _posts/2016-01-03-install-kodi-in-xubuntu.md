@@ -3,7 +3,7 @@ layout: post
 title: "在Xubuntu上安装并开机进入Kodi媒体中心"
 description: ""
 category:
-tags: []
+tags: [ubuntu, kodi, XBMC]
 ---
 {% include JB/setup %}
 
@@ -24,7 +24,7 @@ tags: []
     sudo usermod -a -G plugdev kodi
     sudo usermod -a -G tty kodi
 
-3) sudo dpkg-reconfigure x11-common 弹出的选项框选择任何人（anybody） 
+3) sudo dpkg-reconfigure x11-common 弹出的选项框选择任何人（anybody）
 
 4) sudo vim /etc/systemd/system/kodi.service
 输入以下内容：
@@ -52,4 +52,4 @@ tags: []
 
     reboot
 
-下次电脑开机就可以直接进入kodi的界面了 
+下次电脑开机就可以直接进入kodi的界面了

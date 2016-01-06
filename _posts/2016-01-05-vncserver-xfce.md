@@ -3,7 +3,7 @@ layout: post
 title: "给kodi的kubuntu安装vncserver"
 description: ""
 category:
-tags: []
+tags: [vnc, remote_desktop]
 ---
 {% include JB/setup %}
 

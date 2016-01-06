@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "利用babun, tmux, zsh高度定制shell(cygwin)"
+title: "利用babun, tmux, zsh高度定制shell"
 description: ""
 category:
 tags: [shell, tmux, zsh]

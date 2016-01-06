@@ -3,7 +3,7 @@ layout: post
 title: "ssh反向端口转发"
 description: ""
 category:
-tags: []
+tags: [linux, ssh]
 ---
 {% include JB/setup %}
 从本地Host用SSH连接到目标主机，怎么让目标主机也可以连接本地的SSH呢？

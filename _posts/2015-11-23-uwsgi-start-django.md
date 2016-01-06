@@ -3,7 +3,7 @@ layout: post
 title: "uwsgi start django"
 description: ""
 category:
-tags: [python, uwsgi]
+tags: [python, uwsgi, django]
 ---
 {% include JB/setup %}
 

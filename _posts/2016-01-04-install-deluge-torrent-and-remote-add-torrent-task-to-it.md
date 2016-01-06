@@ -3,7 +3,7 @@ layout: post
 title: "安装deluge服务器，并远程下载和添加torrent"
 description: ""
 category:
-tags: []
+tags: [torrent, ubuntu]
 ---
 {% include JB/setup %}
 上一篇装完kodi后，我的旧电脑就彻底变成了一个kodi/XBMC媒体中心，那么比如我要下载新的美剧什么的，好像就还是不那么方便。

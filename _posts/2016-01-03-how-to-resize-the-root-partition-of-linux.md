@@ -3,7 +3,7 @@ layout: post
 title: "调整linux主分区的大小"
 description: ""
 category:
-tags: []
+tags: [linux, partition]
 ---
 {% include JB/setup %}
 

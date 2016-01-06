@@ -3,7 +3,7 @@ layout: post
 title: "Linux创建自定义的应用程序启动器"
 description: ""
 category:
-tags: [linux]
+tags: [linux, Gnome]
 ---
 {% include JB/setup %}
 
