@@ -48,3 +48,17 @@ tags: [vnc, remote_desktop]
 会提示让你输入密码：
 
 进去后就是vnc的桌面了, 在xubuntu下测试，不需要配置服务器上的```$HOME/.vnc/xstartup```就可以直接进入xfce4桌面
+
+---
+
+更正，采用默认的.vnc/xstartup配置虽然能用，但是会有一些样式问题，比如图标无法显示。所以还是改一下好了：
+
+    $ cp ~/.vnc/xstartup ~/.vnc/xstartup.bak
+    $ vim ~/.vnv/xstartup
+
+删除所有的内容，重启vncserver
+
+    $ vncserver -kill :1
+    $ vncserver
+
+进去以后基本商就是和你直接进入桌面一样的xfce了。
