@@ -1,11 +1,10 @@
 ---
 layout: page
-title: "Index"
+title: "感兴趣的项目"
 description: ""
 ---
 {% include JB/setup %}
 
-#有趣的项目
 - Cube:
 http://www.playmapscube.com/
 - What do you love (By google)
