@@ -62,3 +62,12 @@ tags: [vnc, remote_desktop]
     $ vncserver
 
 进去以后基本商就是和你直接进入桌面一样的xfce了。
+
+## 开机自动启动
+
+
+
+
+
+
+[How To Install VNC Server On Ubuntu 14.04](https://www.howtoforge.com/how-to-install-vnc-server-on-ubuntu-14.04)
