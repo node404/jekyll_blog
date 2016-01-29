@@ -2,8 +2,8 @@
 layout: page
 title: "感兴趣的项目"
 Header: "Projects"
-description: ""
-group: navigation
+description: " "
+
 ---
 {% include JB/setup %}
 
