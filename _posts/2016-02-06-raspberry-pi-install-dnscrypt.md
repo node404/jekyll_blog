@@ -13,9 +13,12 @@ tags: []
 
 1. 安装编译工具：
 
+
     sudo apt-get install libtool pkg-config build-essential autoconf automake
 
+
 2. 安装一个叫做libsodium的依赖，因为apt工具里没有包含这个依赖，因此需要手动编译，去https://download.libsodium.org/libsodium/releases找最新的版本，下载并且编译：
+
 
     mkdir build
     cd build/
@@ -26,8 +29,10 @@ tags: []
     make
     sudo make install
 
+
 3. 下载dnscrypt编译：
-    
+
+
     wget https://github.com/jedisct1/dnscrypt-proxy/releases/download/1.6.1/dnscrypt-proxy-1.6.1.tar.bz2
     tar -jxvf dnscrypt-proxy-1.6.1.tar.bz2
     cd dnscrypt-proxy-1.6.1
