@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "tmux copy and paste"
+title: "tmux的复制和黏贴"
 description: ""
 category:
 tags: [linux, tmux]
